@@ -80,7 +80,13 @@
     <RootComponents>
       <RootComponent type="1" schemaName="owsh_testentityorganization" behavior="0" />
       <RootComponent type="62" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
+      <RootComponent type="80" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="owsh_PracticeModelDrivenApp" displayName="PracticeModelDrivenApp" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
