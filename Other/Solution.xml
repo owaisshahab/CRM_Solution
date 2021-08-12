@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="owsh_testentityorganization" behavior="0" />
+      <RootComponent type="62" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
