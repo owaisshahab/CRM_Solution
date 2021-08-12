@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8888a971-2c08-49e1-ab6f-ed7ddd40bb76}</formid>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{cfd3d795-4801-472d-8487-16ed1b66e304}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ac9070ed-dee0-468d-8b22-9813d0e16585}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a96157d9-d90f-4170-9762-8ae4ce0e5d1b}">
+                        <labels>
+                          <label description="TestEntityOrganizationPF" languagecode="1033" />
+                        </labels>
+                        <control id="owsh_testentityorganizationpf" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="owsh_testentityorganizationpf" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

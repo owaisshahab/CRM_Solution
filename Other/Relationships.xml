@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="lk_owsh_testentityorganization_createdby" />
+  <EntityRelationship Name="lk_owsh_testentityorganization_modifiedby" />
+  <EntityRelationship Name="organization_owsh_testentityorganization" />
+</EntityRelationships>
