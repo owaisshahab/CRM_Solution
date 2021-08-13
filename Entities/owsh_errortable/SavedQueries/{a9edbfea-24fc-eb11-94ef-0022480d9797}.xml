@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a9edbfea-24fc-eb11-94ef-0022480d9797}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="owsh_name" select="1" preview="1" icon="1">
+        <row name="result" id="owsh_errortableid">
+          <cell name="owsh_name" width="150" />
+          <cell name="owsh_message" width="100" disableSorting="1" />
+          <cell name="owsh_errortype" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="owsh_errortable">
+          <attribute name="owsh_name" />
+          <order attribute="owsh_name" descending="false" />
+          <attribute name="owsh_message" />
+          <attribute name="owsh_errortype" />
+          <attribute name="owsh_errortableid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="ErrorMessage-Type" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -11,7 +11,29 @@
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="62" schemaName="owsh_PracticeModelDrivenApp" />
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="1" schemaName="owsh_errortable" />
+    <AppModuleComponent type="60" id="{8fccad4a-a5a6-4627-8b86-641282536269}" />
+    <AppModuleComponent type="60" id="{a13d4c05-b517-4829-aa9c-a4de5b042ef0}" />
+    <AppModuleComponent type="60" id="{292bed55-aac9-47f4-b727-1fbf527c8ea1}" />
+    <AppModuleComponent type="26" id="{252dd2cb-df30-4007-abce-2d4cf1179c91}" />
+    <AppModuleComponent type="26" id="{1632fcbd-24fc-eb11-94ef-0022480d9797}" />
+    <AppModuleComponent type="26" id="{a9edbfea-24fc-eb11-94ef-0022480d9797}" />
+    <AppModuleComponent type="26" id="{d6437759-fbfd-4e8d-b10d-8f96db7d43a7}" />
+    <AppModuleComponent type="26" id="{421742f5-85b3-4b11-94e5-cfaf4cbb0141}" />
+    <AppModuleComponent type="26" id="{d47965ef-92c8-47d8-90ce-f26581897ffd}" />
+    <AppModuleComponent type="26" id="{ffb017b9-7e31-426a-826c-2bca02033213}" />
     <AppModuleComponent type="1" schemaName="owsh_testentityorganization" />
+    <AppModuleComponent type="60" id="{27427d6c-2edb-4095-830e-52195f9d6b4e}" />
+    <AppModuleComponent type="60" id="{8888a971-2c08-49e1-ab6f-ed7ddd40bb76}" />
+    <AppModuleComponent type="26" id="{921076d9-4454-498e-9516-801bcc2122d2}" />
+    <AppModuleComponent type="26" id="{dc201d3e-9e4d-407a-9c99-3427fbd8c43a}" />
+    <AppModuleComponent type="26" id="{2d95c836-90fb-eb11-94ef-0022480d9797}" />
+    <AppModuleComponent type="26" id="{dd6d2376-90fb-eb11-94ef-0022480d9797}" />
+    <AppModuleComponent type="26" id="{cf784f4a-ddc8-449e-b495-539fd00eb220}" />
+    <AppModuleComponent type="26" id="{cd76cd30-a7b4-4713-84fa-dd1ffdbfbf0d}" />
+    <AppModuleComponent type="26" id="{611875e4-6dbb-415d-9135-935d728a080e}" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />

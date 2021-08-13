@@ -78,11 +78,50 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="owsh_errortable" behavior="0" />
       <RootComponent type="1" schemaName="owsh_testentityorganization" behavior="0" />
+      <RootComponent type="9" schemaName="owsh_errortype" behavior="0" />
       <RootComponent type="62" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
       <RootComponent type="80" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
     </RootComponents>
     <MissingDependencies>
+      <MissingDependency>
+        <Required type="60" displayName="Account Reference Panel" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+        <Dependent type="60" displayName="Account Reference Panel" parentDisplayName="Account" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+        <Dependent type="60" displayName="Social Profiles" parentDisplayName="Account" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+        <Dependent type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account for Interactive experience" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+        <Dependent type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account card" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+        <Dependent type="60" displayName="account card" parentDisplayName="Account" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Quick Create" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+        <Dependent type="60" displayName="Account Quick Create" parentDisplayName="Account" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Card form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{cccff382-2b92-467e-bf1b-3db179512af8}" />
+        <Dependent type="60" displayName="Account Card form" parentDisplayName="Account" id="{cccff382-2b92-467e-bf1b-3db179512af8}" />
+      </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="owsh_PracticeModelDrivenApp" displayName="PracticeModelDrivenApp" />

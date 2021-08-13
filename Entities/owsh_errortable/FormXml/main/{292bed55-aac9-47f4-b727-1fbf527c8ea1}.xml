@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{292bed55-aac9-47f4-b727-1fbf527c8ea1}</formid>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{e9574ee7-cae3-4ba2-bf5e-ee0421ef5abf}" IsUserDefined="1" labelid="{5235a72b-9654-4e70-96da-3db6233caa92}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f648868c-799c-4f4e-9fa0-b4241e0190c3}" labelid="{f9743baf-d594-476b-91dc-e8b423a3b250}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3bd199af-3c09-4053-bb78-d40ff1b87262}" labelid="{38d6bc22-c9d7-46ff-a436-20afa863678a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="owsh_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="owsh_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1a05ecd-5e86-825d-d290-0d8648b54306}" showlabel="true" locklevel="0" labelid="{62443c62-da68-4d42-9028-25a19dabb9c8}">
+                        <labels>
+                          <label description="Message" languagecode="1033" />
+                        </labels>
+                        <control id="owsh_message" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="owsh_message" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d0ae47a-6750-8e19-4a73-8657ded002c1}" showlabel="true" locklevel="0" labelid="{5abb80be-9f96-4484-8f96-9cff8d5bd4f6}">
+                        <labels>
+                          <label description="ErrorType" languagecode="1033" />
+                        </labels>
+                        <control id="owsh_errortype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="owsh_errortype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79c0571d-b1ad-8770-b7a8-a1a10ee5027d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8e072b7-0959-6c2c-639c-996dd903d1a2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{082ae717-0b85-1c38-9d35-05456597c911}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{881acaad-e383-59b5-1143-a9dcb18b2a7e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31ba3c8a-2d9a-01d7-7064-26d170757b54}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2db773ed-2b57-ae15-eb91-612cd3939815}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="MainForm2" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>
