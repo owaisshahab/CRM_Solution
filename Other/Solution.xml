@@ -79,9 +79,12 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="owsh_employee" behavior="0" />
       <RootComponent type="1" schemaName="owsh_errortable" behavior="0" />
       <RootComponent type="1" schemaName="owsh_testentityorganization" behavior="0" />
       <RootComponent type="9" schemaName="owsh_errortype" behavior="0" />
+      <RootComponent type="9" schemaName="owsh_gender" behavior="0" />
+      <RootComponent type="29" id="{7cfc2c8d-3cfc-eb11-94ef-0022480d9797}" behavior="0" />
       <RootComponent type="62" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
       <RootComponent type="80" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
     </RootComponents>
