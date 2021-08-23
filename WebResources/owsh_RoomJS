@@ -1,0 +1,24 @@
+function onChangeCheckStatus(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var roomstatus = formContext.getAttribute("owsh_roomstatus").getValue();
+    if (roomstatus !== null && roomstatus === 476270000) {
+        var dateTime = new Date();
+        dateTime.setHours(9, 30);
+        formContext.getAttribute("owsh_checkindate").setValue(dateTime);
+    }
+    else if(roomstatus === 476270001){
+        formContext.getAttribute("owsh_checkindate").setValue();
+    }
+}
+
+function checkDateValidationOnSave(executionContext) {
+    var formContext = executionContext.getFormContext();
+    if (formContext.getAttribute("owsh_checkindate").getValue() !== null && formContext.getAttribute("owsh_plannedcheckout").getValue() !== null) {
+        var checkindate = formContext.getAttribute("owsh_checkindate").getValue();
+        var checkoutdate =formContext.getAttribute("owsh_plannedcheckout").getValue();
+        if (checkindate > checkoutdate ) {
+            Xrm.Navigation.openAlertDialog("Check-Out Date must be later than Check-In Start Date.");
+            executionContext.getEventArgs().preventDefault();
+        }
+    }
+}

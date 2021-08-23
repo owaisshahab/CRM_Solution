@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21073.130" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.21081.137" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>OwaisPractice</UniqueName>
     <LocalizedNames>
@@ -79,51 +79,215 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="activityfileattachment" behavior="1" />
+      <RootComponent type="1" schemaName="activitymimeattachment" behavior="1" />
+      <RootComponent type="1" schemaName="activitypointer" behavior="1" />
+      <RootComponent type="1" schemaName="appointment" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="customeraddress" behavior="1" />
+      <RootComponent type="1" schemaName="email" behavior="1" />
+      <RootComponent type="1" schemaName="letter" behavior="1" />
+      <RootComponent type="1" schemaName="mailbox" behavior="1" />
       <RootComponent type="1" schemaName="owsh_employee" behavior="0" />
       <RootComponent type="1" schemaName="owsh_errortable" behavior="0" />
+      <RootComponent type="1" schemaName="owsh_room" behavior="0" />
       <RootComponent type="1" schemaName="owsh_testentityorganization" behavior="0" />
+      <RootComponent type="1" schemaName="phonecall" behavior="1" />
+      <RootComponent type="1" schemaName="queue" behavior="1" />
+      <RootComponent type="1" schemaName="report" behavior="1" />
+      <RootComponent type="1" schemaName="task" behavior="1" />
       <RootComponent type="9" schemaName="owsh_errortype" behavior="0" />
       <RootComponent type="9" schemaName="owsh_gender" behavior="0" />
       <RootComponent type="29" id="{7cfc2c8d-3cfc-eb11-94ef-0022480d9797}" behavior="0" />
+      <RootComponent type="61" schemaName="owsh_RoomJS" behavior="0" />
       <RootComponent type="62" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
       <RootComponent type="80" schemaName="owsh_PracticeModelDrivenApp" behavior="0" />
+      <RootComponent type="91" id="{b2322ad6-093d-4f2e-bf49-8a9ac86c8a11}" schemaName="BasicPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37b96a9332464afe" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="60" displayName="Account Reference Panel" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+        <Required type="1" schemaName="activityfileattachment" displayName="Activity File Attachment" solution="msdynce_ActivitiesPatch (9.0.21075.210727005)" />
+        <Dependent type="1" schemaName="activityfileattachment" displayName="Activity File Attachment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="activityfileattachment" displayName="Activity File Attachment" solution="msdynce_ActivitiesPatch (9.0.21075.210727005)" />
+        <Dependent type="62" schemaName="owsh_PracticeModelDrivenApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Reference Panel" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account Reference Panel" parentDisplayName="Account" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Social Profiles" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+        <Required type="60" displayName="Email" parentDisplayName="Email" solution="msdynce_Activities (9.0.1.2033)" id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" />
+        <Dependent type="60" displayName="Email" parentDisplayName="Email" id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Task" parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
+        <Dependent type="60" displayName="Task" parentDisplayName="Task" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Email for Interactive experience" parentDisplayName="Email" solution="msdynce_Activities (9.0.1.2033)" id="{1d5ad078-3edb-4edc-98c6-c0c21e3125e3}" />
+        <Dependent type="60" displayName="Email for Interactive experience" parentDisplayName="Email" id="{1d5ad078-3edb-4edc-98c6-c0c21e3125e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Social Profiles" parentDisplayName="Account" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+        <Required type="60" displayName="Appointment for Interactive experience" parentDisplayName="Appointment" solution="msdynce_Activities (9.0.1.2033)" id="{230cd27c-0ce0-4b52-9fe5-d7a5ed94ba4e}" />
+        <Dependent type="60" displayName="Appointment for Interactive experience" parentDisplayName="Appointment" id="{230cd27c-0ce0-4b52-9fe5-d7a5ed94ba4e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="account contact card" parentDisplayName="Contact" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Wizard" parentDisplayName="Appointment" solution="msdynce_Activities (9.0.1.2033)" id="{3a7d8836-e2d7-4bc3-919b-cc86a8d9688a}" />
+        <Dependent type="60" displayName="Wizard" parentDisplayName="Appointment" id="{3a7d8836-e2d7-4bc3-919b-cc86a8d9688a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" solution="msdynce_AppCommonPatch201904 (9.0.21074.10001)" id="{449faa0e-f471-48ec-87d0-4719909546d2}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" id="{449faa0e-f471-48ec-87d0-4719909546d2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Appointment" parentDisplayName="Appointment" solution="msdynce_Activities (9.0.1.2033)" id="{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}" />
+        <Dependent type="60" displayName="Appointment" parentDisplayName="Appointment" id="{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Appointment quick create form." parentDisplayName="Appointment" solution="msdynce_Activities (9.0.1.2033)" id="{5895e983-598b-4834-80f9-68a4e9f4f744}" />
+        <Dependent type="60" displayName="Appointment quick create form." parentDisplayName="Appointment" id="{5895e983-598b-4834-80f9-68a4e9f4f744}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Enhanced Email" parentDisplayName="Email" solution="msdynce_ActivitiesPatch (9.0.21075.210727005)" id="{63769d04-c74f-4808-b0aa-77339e1b9191}" />
+        <Dependent type="60" displayName="Enhanced Email" parentDisplayName="Email" id="{63769d04-c74f-4808-b0aa-77339e1b9191}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="contact card" parentDisplayName="Contact" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Social Profiles" parentDisplayName="Contact" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Account for Interactive experience" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+        <Required type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Wizard" parentDisplayName="Email" solution="msdynce_Activities (9.0.1.2033)" id="{9360ee64-5238-4334-a1de-c155d20fe63d}" />
+        <Dependent type="60" displayName="Wizard" parentDisplayName="Email" id="{9360ee64-5238-4334-a1de-c155d20fe63d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Task quick create form." parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}" />
+        <Dependent type="60" displayName="Task quick create form." parentDisplayName="Task" id="{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account for Interactive experience" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="account card" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+        <Required type="60" displayName="Phone call quick create form." parentDisplayName="Phone Call" solution="msdynce_Activities (9.0.1.2033)" id="{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}" />
+        <Dependent type="60" displayName="Phone call quick create form." parentDisplayName="Phone Call" id="{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Phone Call" parentDisplayName="Phone Call" solution="msdynce_Activities (9.0.1.2033)" id="{a91390a5-99bb-4d10-9eee-3a5c87f841f1}" />
+        <Dependent type="60" displayName="Phone Call" parentDisplayName="Phone Call" id="{a91390a5-99bb-4d10-9eee-3a5c87f841f1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account card" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="account card" parentDisplayName="Account" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Required type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Account Quick Create" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+        <Required type="60" displayName="Contact Card form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Card form" parentDisplayName="Contact" id="{bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Quick Form" parentDisplayName="Contact" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Quick Create" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account Quick Create" parentDisplayName="Account" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="60" displayName="Account Card form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{cccff382-2b92-467e-bf1b-3db179512af8}" />
+        <Required type="60" displayName="Account Card form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{cccff382-2b92-467e-bf1b-3db179512af8}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Account Card form" parentDisplayName="Account" id="{cccff382-2b92-467e-bf1b-3db179512af8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Phone Call for Interactive experience" parentDisplayName="Phone Call" solution="msdynce_Activities (9.0.1.2033)" id="{cdc622ea-2a17-4cc3-9605-44564d56cea7}" />
+        <Dependent type="60" displayName="Phone Call for Interactive experience" parentDisplayName="Phone Call" id="{cdc622ea-2a17-4cc3-9605-44564d56cea7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Task for Interactive experience" parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}" />
+        <Dependent type="60" displayName="Task for Interactive experience" parentDisplayName="Task" id="{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Reference Panel" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Reference Panel" parentDisplayName="Contact" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Recent Cases and Entitlements" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}">
+          <package>msdynce_AppCommonAnchor (9.0.21074.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Recent Cases and Entitlements" parentDisplayName="Contact" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />

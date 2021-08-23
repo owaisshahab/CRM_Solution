@@ -5,11 +5,15 @@
   <EntityRelationship Name="lk_owsh_employee_modifiedby" />
   <EntityRelationship Name="lk_owsh_errortable_createdby" />
   <EntityRelationship Name="lk_owsh_errortable_modifiedby" />
+  <EntityRelationship Name="lk_owsh_room_createdby" />
+  <EntityRelationship Name="lk_owsh_room_modifiedby" />
   <EntityRelationship Name="lk_owsh_testentityorganization_createdby" />
   <EntityRelationship Name="lk_owsh_testentityorganization_modifiedby" />
   <EntityRelationship Name="organization_owsh_errortable" />
+  <EntityRelationship Name="organization_owsh_room" />
   <EntityRelationship Name="organization_owsh_testentityorganization" />
   <EntityRelationship Name="owner_owsh_employee" />
+  <EntityRelationship Name="owsh_contact_owsh_room_Checkincontact" />
   <EntityRelationship Name="team_owsh_employee" />
   <EntityRelationship Name="user_owsh_employee" />
 </EntityRelationships>
